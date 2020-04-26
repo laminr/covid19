@@ -3,7 +3,7 @@ import {registerLocaleData} from '@angular/common';
 import {LOCALE_ID, NgModule} from '@angular/core';
 import localeFr from '@angular/common/locales/fr';
 import {AppComponent} from './app.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {OpenCovidService} from '../services/openCovid.service';
 import {ChartsModule} from 'ng2-charts';
 import {GlobalChartComponent} from './global-chart/global-chart.component';
@@ -25,8 +25,15 @@ import {OWL_DATE_TIME_LOCALE, OwlDateTimeModule, OwlNativeDateTimeModule} from '
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import {NowService} from '../services/now.service';
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 registerLocaleData(localeFr);
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -53,6 +60,15 @@ registerLocaleData(localeFr);
     BrowserAnimationsModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+        }
+      }
+    )
   ],
   providers: [
     OpenCovidService,

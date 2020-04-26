@@ -7,7 +7,7 @@
   {
     "id": 1,
     "title": "Faire ses courses",
-    "description": "Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité3 dans des établissements dont les activités demeurent autorisées (liste sur gouvernement.fr)"
+    "description": "Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessitée dans des établissements dont les activités demeurent autorisées (liste sur gouvernement.fr)"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
   {
     "id": 3,
     "title": "Assistance aux personnes vulnérables",
-    "description": "Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants"
+    "description": "Déplacements pour motif familial impérieux, pour l'assistance aux personnes vulnérables ou la garde d’enfants"
   },
   {
     "id": 4,
@@ -31,7 +31,7 @@
   },
   {
     "id": 6,
-    "title": "missions d’intérêt général",
-    "description": "Participation à des missions d’intérêt général sur demande de l’autorité administrative"
+    "title": "Missions d'intérêt général",
+    "description": "Participation à des missions d'intérêt général sur demande de l’autorité administrative"
   }
 ]

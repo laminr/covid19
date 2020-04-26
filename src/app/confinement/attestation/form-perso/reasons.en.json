@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "title": "Business trip",
+    "description": "Travel between the home and the place of the professional activity, when they are essential for the exercise of activities which cannot be organized in the form of homeworking or professional displacements which cannot be deferred"
+  },
+  {
+    "id": 1,
+    "title": "Doing grocery",
+    "description": "Travel to make purchases of supplies necessary for professional activity and purchases of basic necessities in shops which activities remain authorized (list on government.fr)"
+  },
+  {
+    "id": 2,
+    "title": "Health reason",
+    "description": "Doctor appointment and care that cannot be provided remotely and that cannot be deferred; Doctor appointment and care of patients with a long-term condition"
+  },
+  {
+    "id": 3,
+    "title": "Assistance to vulnerable people",
+    "description": "Travel for compelling family reasons, for assistance to vulnerable persons or childcare"
+  },
+  {
+    "id": 4,
+    "title": "Brief trip",
+    "description": "Brief trips, within the limit of one hour daily and within a maximum radius of 1 kilometer around home, linked either to the individual physical activity of the people, to the exclusion of any collective sporting practice and any proximity to other people, either to walk with the only people living in the same home, or the needs of pets"
+  },
+  {
+    "id": 5,
+    "title": "Judicial or administrative convocation",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "title": "General interest missions",
+    "description": "Participation in missions of general interest at the request of the administrative authority"
+  }
+]

@@ -3,11 +3,11 @@
     <div class="row">
       <div class="col-sm-12">
         <h5 class="form-inline">
-          <label for="attestation-type">Générez votre attestation de sortie</label>
+          <label for="attestation-type">{{'certificate.title' | translate}}</label>
 
           <select id="attestation-type" (change)="onChange($event)" class="form-control col-sm-4 ml-md-4 ml-sm-0">
-            <option data-content="<i class='fa fa-user'></i> Personnelle" value="perso">Personnelle</option>
-            <option data-content="<i class='fas fa-user-tie'></i> Professionelle" value="pro">Professionelle</option>
+            <option data-content="<i class='fa fa-user'></i> Personnelle" value="perso">{{'certificate.personal' | translate}}</option>
+            <option data-content="<i class='fas fa-user-tie'></i> Professionelle" value="pro">{{'certificate.professional' | translate}}</option>
           </select>
         </h5>
 
@@ -19,12 +19,12 @@
   </div>
 
   <div class="col-md-6 col-sm-12" style="height: 760px">
-      <ng2-pdfjs-viewer #pdfViewer *ngIf="pdf !== undefined"
-                        [pdfSrc]="pdf.content"
-                        [openFile]="false"
-                        [print]="true"
-                        [rotateccw]="false"
-                        [showSpinner]="false"
-                        [viewBookmark]="false"></ng2-pdfjs-viewer>
+    <ng2-pdfjs-viewer #pdfViewer *ngIf="pdf !== undefined"
+                      [pdfSrc]="pdf.content"
+                      [openFile]="false"
+                      [print]="true"
+                      [rotateccw]="false"
+                      [showSpinner]="false"
+                      [viewBookmark]="false"></ng2-pdfjs-viewer>
   </div>
 </div>

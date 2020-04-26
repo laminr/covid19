@@ -1,0 +1,16 @@
+.navbar-brand img {
+  width: 45px;
+}
+
+#language {
+  float: right;
+}
+.img-container {
+  width: 45px;
+  float: right;
+  margin-right: 20px;
+}
+
+.img-container img {
+  width: 100%;
+}

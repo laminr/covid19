@@ -1,61 +1,57 @@
-<p>Je soussigné(e)</p>
+<p>{{'form.pro.hereby' | translate}}</p>
 <form [formGroup]="proForm">
   <table class="table table-borderless">
     <tbody>
     <tr>
-      <td>Mme / M.</td>
+      <td>{{'form.pro.manager.label' | translate}}.</td>
       <td><input name="name"
                  formControlName="name"
                  class="form-control"
-                 placeholder="Nom Prénom Responsable"></td>
+                 placeholder="{{'form.pro.manager.phdr' | translate}}"></td>
     </tr>
 
     <tr>
-      <td>Fonction</td>
+      <td>{{'form.pro.function.label' | translate}}</td>
       <td><input name="position"
                  formControlName="position"
                  class="form-control"
-                 placeholder="exp: Directeur d'agence"></td>
+                 placeholder="{{'form.pro.function.phdr' | translate}}"></td>
     </tr>
 
     </tbody>
   </table>
 
-  <p class="text-justify">
-    certifie que les déplacements de la personne ci-après, entre son domicile et son lieu
-    d’activité professionnelle, ne peuvent être différés ou sont indispensables à l’exercice
-    d’activités ne pouvant être organisées sous forme de télétravail (au sens du 1<sup>er</sup> du 2<sup>e</sup> alinéa
-    de l’article 1er du décret du 16 mars 2020 portant règlementation des déplacements
-    dans le cadre de la lutte contre la propagation du virus Covid-19):
-  </p>
+  <p class="text-justify" [innerHTML]="'form.pro.certify' | translate"></p>
 
   <table class="table table-borderless">
     <tbody>
     <tr>
-      <td style="width: 40%">Nom</td>
+      <td style="width: 40%">{{'form.pro.lastname.label' | translate}}</td>
       <td><input name="lastname"
                  formControlName="lastname"
                  class="form-control"
-                 placeholder="Nom du sortant"></td>
+                 placeholder="{{'form.pro.lastname.phdr' | translate}}"></td>
     </tr>
 
     <tr>
-      <td>Prénom</td>
+      <td>{{'form.pro.firstname.label' | translate}}</td>
       <td><input name="firstname"
                  formControlName="firstname"
                  class="form-control"
-                 placeholder="Prénom du sortant"></td>
+                 placeholder="{{'form.pro.firstname.phdr' | translate}}"></td>
     </tr>
 
     <tr>
-      <td>Date de naissance</td>
+      <td>{{'form.pro.dob.label' | translate}}</td>
       <td class="col-auto">
         <div class="input-group">
           <input [owlDateTime]="birthdayElt" [owlDateTimeTrigger]="birthdayElt"
-                 formControlName="birthday" class="form-control"  placeholder="jj/mm/annee">
-          <owl-date-time [startAt]="startAt" [startView]="'multi-years'" [pickerType]="'calendar'" #birthdayElt></owl-date-time>
+                 formControlName="birthday" class="form-control" placeholder="{{'form.pro.dob.phdr' | translate}}">
+          <owl-date-time [startAt]="startAt" [startView]="'multi-years'" [pickerType]="'calendar'"
+                         #birthdayElt></owl-date-time>
           <div class="input-group-append border-dark">
-            <div class="input-group-text bg-dark border-dark trigger" style="cursor: pointer" [owlDateTimeTrigger]="birthdayElt">
+            <div class="input-group-text bg-dark border-dark trigger" style="cursor: pointer"
+                 [owlDateTimeTrigger]="birthdayElt">
               <i class="fa fa-calendar-alt text-white"></i>
             </div>
           </div>
@@ -64,47 +60,56 @@
     </tr>
 
     <tr>
-      <td>Address du domicile</td>
-      <td><textarea name="address"
+      <td>{{'form.pro.pob.label' | translate}}</td>
+      <td><input name="pob"
+                 formControlName="pob"
+                 class="form-control"
+                 placeholder="{{'form.pro.pob.phdr' | translate}}">
+      </td>
+    </tr>
+
+    <tr>
+      <td>{{'form.pro.living.label' | translate}}</td>
+      <td><input name="address"
                  formControlName="address"
                  class="form-control"
-                    placeholder="Adresse de confinement"></textarea>
+                 placeholder="{{'form.pro.living.phdr' | translate}}">
       </td>
     </tr>
 
     <tr>
-      <td>Nature de l’activité professionnelle</td>
+      <td>{{'form.pro.activity.label' | translate}}</td>
       <td>
-        <textarea name="activity"
-                  formControlName="activity"
-                  class="form-control"
-                  placeholder="exp: Chauffeur"></textarea>
+        <input name="activity"
+               formControlName="activity"
+               class="form-control"
+               placeholder="{{'form.pro.activity.phdr' | translate}}"/>
       </td>
     </tr>
 
     <tr>
-      <td>Lieu d’exercice de l’activité professionnelle</td>
-      <td><textarea name="workplace"
+      <td>{{'form.pro.place.label' | translate}}</td>
+      <td><input name="workplace"
                  formControlName="workplace"
-                 class="form-control" placeholder="Adresse du lieu de travail"></textarea>
+                 class="form-control" placeholder="{{'form.pro.place.phdr' | translate}}">
       </td>
     </tr>
 
     <tr>
-      <td>Trajet de déplacement</td>
-      <td><textarea name="path"
-                 formControlName="path"
-                 class="form-control"
-                    placeholder="exp: Du lieu de travail vers le dépôt se trouvant au..."></textarea>
-      </td>
-    </tr>
-
-    <tr>
-      <td>Moyen de déplacement</td>
+      <td>{{'form.pro.means.label' | translate}}</td>
       <td><input name="mean"
                  formControlName="mean"
                  class="form-control"
-                 placeholder="exp: Voiture immatriculée XX-999-XX"></td>
+                 placeholder="{{'form.pro.means.phdr' | translate}}"></td>
+    </tr>
+
+    <tr>
+      <td>{{'form.pro.validity.label' | translate}}</td>
+      <td><input name="validity"
+                 formControlName="validity"
+                 class="form-control"
+                 placeholder="exp: Du lieu de travail vers le dépôt se trouvant au...">
+      </td>
     </tr>
     </tbody>
   </table>
@@ -112,24 +117,25 @@
   <table class="table table-borderless">
     <tbody>
     <tr>
-      <td>Fait à</td>
+      <td>{{'form.pro.doneAt.label' | translate}}</td>
       <td>
         <input name="city"
                formControlName="city"
                class="form-control"
-               placeholder="Ville">
+               placeholder="{{'form.pro.doneAt.phdr' | translate}}">
       </td>
     </tr>
 
     <tr>
-      <td>Le</td>
+      <td>{{'form.pro.when' | translate}}</td>
       <td class="col-auto">
         <div class="input-group">
           <input [min]="today" [owlDateTime]="todayElt" [owlDateTimeTrigger]="todayElt"
                  formControlName="today" class="form-control" [value]="today">
           <owl-date-time [pickerType]="'calendar'" #todayElt></owl-date-time>
           <div class="input-group-append border-dark">
-            <div class="input-group-text bg-dark border-dark trigger" style="cursor: pointer" [owlDateTimeTrigger]="todayElt">
+            <div class="input-group-text bg-dark border-dark trigger" style="cursor: pointer"
+                 [owlDateTimeTrigger]="todayElt">
               <i class="fa fa-calendar-alt text-white"></i>
             </div>
           </div>
@@ -141,7 +147,7 @@
       <td></td>
       <td>
         <a [href]="downloadUrl" [download]="downloadName" class="btn btn-success float-right text-white" type="button">
-          <i class="fas fa-file-download"></i> Télécharger
+          <i class="fas fa-file-download"></i> {{'form.pro.download' | translate}}
         </a>
       </td>
     </tr>

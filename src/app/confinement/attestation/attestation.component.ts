@@ -6,6 +6,7 @@ import {PdfModel} from '../../../models/attestation/pdf.model';
 import {PdfDataService} from '../../../services/pdf-data.service';
 import {PdfDataModel} from '../../../models/attestation/pdfData.model';
 import {AttestationType} from '../../../models/attestation/attestationType.enum';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-attestation',
@@ -19,10 +20,17 @@ export class AttestationComponent implements OnInit, OnDestroy {
   type = AttestationType.Perso;
   pdfSubscription: Subscription;
   pdfDataSubscription: Subscription;
+  langs : string[] = [];
 
-  constructor(private http: HttpClient, private pdfService: PdfService, private pdfDataService: PdfDataService) { }
+  constructor(private http: HttpClient,
+              private pdfService: PdfService,
+              private pdfDataService: PdfDataService,
+              private translate: TranslateService) {
+  }
 
   async ngOnInit() {
+    this.langs = this.translate.getLangs();
+
     await this.pdfService.draw();
     this.pdfDataSubscription = this.pdfDataService.pdfSubject.subscribe((pdf: PdfDataModel) => {
       this.pdfService.draw();

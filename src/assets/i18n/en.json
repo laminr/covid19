@@ -1,0 +1,93 @@
+{
+  "certificate": {
+    "title": "Generate your exit certificate",
+    "personal": "Personal",
+    "professional": "Professional"
+  },
+  "form": {
+    "perso": {
+      "firstname": {
+        "label": "First name",
+        "placeholder": "Jean"
+      },
+      "lastname": {
+        "label": "Last name",
+        "placeholder": "Dupont"
+      },
+      "dob": {
+        "label": "Date of birth",
+        "placeholder": "dd/mm/yyyy"
+      },
+      "pob": {
+        "label": "In",
+        "placeholder": "City of birth"
+      },
+      "living": {
+        "label": "Living at",
+        "placeholder": "Your containment address"
+      },
+      "certify": "certify that my trip is related to the following reason (check the box) authorized by article 1 of the decree of March 16, 2020 regulating travel as part of the fight against the spread of the Covid-19 virus:",
+      "reason": "Reason to go out",
+      "doneAt": {
+        "label": "Done in",
+        "placeholder": "City"
+      },
+      "when": "On",
+      "download": "Download"
+    },
+    "pro": {
+      "hereby": "I hereby",
+      "manager": {
+        "label": "Mrs / Mr",
+        "phdr": "Manager Last and first name"
+      },
+      "function": {
+        "label": "Function",
+        "phdr": "eg: Agence Manager"
+      },
+      "certify": "certifies that the movements of the following person, between his home and his place of professional activity, cannot be postponed or are essential for the exercise of activities which cannot be organized in the form of homework (as declare as 1<sup>er</sup> of the 2<sup>nd</sup> paragraph of article 1 of the decree of March 16, 2020 regulating travel within the framework of the fight against the spread of the Covid-19 virus):",
+      "firstname": {
+        "label": "First name",
+        "phdr": "First name of the person going out"
+      },
+      "lastname": {
+        "label": "Last name",
+        "phdr": "Last name of the person going out"
+      },
+      "dob": {
+        "label": "Date of birth",
+        "phdr": "dd/mm/year"
+      },
+      "pob": {
+        "label": "Place of birth",
+        "phdr": "City of birth"
+      },
+      "living": {
+        "label": "Home address",
+        "phdr": "Confinement address"
+      },
+      "activity": {
+        "label": "Nature of the professional activity",
+        "phdr": "eg: Airline pilot"
+      },
+      "place": {
+        "label": "Professional activity location",
+        "phdr": "Place of work address"
+      },
+      "validity": {
+        "label": "Validity period",
+        "phdr": "eg: 1 April to 30 April 2020"
+      },
+      "means": {
+        "label": "Moyen de déplacement",
+        "phdr": "eg: Car registration XX-999-XX"
+      },
+      "doneAt": {
+        "label": "Done in",
+        "phdr": "City"
+      },
+      "when": "On",
+      "download": "Download"
+    }
+  }
+}

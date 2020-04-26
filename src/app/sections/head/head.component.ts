@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import {Router} from '@angular/router';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-head',
@@ -8,15 +9,12 @@ import {Router} from '@angular/router';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-  confinementDays: number;
-  constructor(public router: Router) { }
+  constructor(public router: Router, public translate: TranslateService) { }
 
   ngOnInit() {
-    const confinementBegin = moment('2020-03-17 00:00:00'); // new Date();
-    this.confinementDays = Math.abs(confinementBegin.diff(moment(), 'days')) + 1;
   }
 
-  doNothing() {
-    return;
+  useLanguage(language: string) {
+    this.translate.use(language);
   }
 }

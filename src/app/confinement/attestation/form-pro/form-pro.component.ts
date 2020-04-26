@@ -16,7 +16,7 @@ export class FormProComponent implements OnInit {
   downloadUrl: SafeUrl;
   downloadName: string;
 
-  startAt = new Date('1984-01-01');
+  startAt = new Date('1973-01-01');
   today = new Date();
 
   constructor(private formBuilder: FormBuilder, private sanitizer: DomSanitizer,
@@ -35,10 +35,11 @@ export class FormProComponent implements OnInit {
       lastname: this.pdfDataService.pro.lastname,
       birthday: this.pdfDataService.pro.birthday.getFullYear() < this.today.getFullYear() ?
         this.pdfDataService.pro.birthday : '',
+      pob: this.pdfDataService.pro.pob,
       address: this.pdfDataService.pro.address,
       activity: this.pdfDataService.pro.activity,
       workplace: this.pdfDataService.pro.workplace,
-      path: this.pdfDataService.pro.path,
+      validity: this.pdfDataService.pro.validity,
       mean: this.pdfDataService.pro.mean,
       city: this.pdfDataService.pro.city,
       today: this.pdfDataService.pro.today
@@ -49,8 +50,21 @@ export class FormProComponent implements OnInit {
 
   private onChanges() {
     this.proForm.valueChanges.subscribe(value => {
-      this.pdfDataService.pro = new ProModel(value.name, value.position, value.firstname, value.lastname, value.birthday, value.address,
-        value.activity, value.workplace, value.path, value.mean, value.city, value.today);
+      this.pdfDataService.pro = new ProModel(
+        value.name,
+        value.position,
+        value.firstname,
+        value.lastname,
+        value.birthday,
+        value.pob,
+        value.address,
+        value.activity,
+        value.workplace,
+        value.validity,
+        value.mean,
+        value.city,
+        value.today
+      );
     });
   }
 

@@ -3,27 +3,27 @@
   <table class="table table-borderless">
     <tbody>
     <tr>
-      <td>Prénom</td>
+      <td>{{'form.perso.firstname.label' | translate}}</td>
       <td><input name="firstname"
                  formControlName="firstname"
                  class="form-control"
-                 placeholder="Jean"></td>
+                 placeholder="{{'form.perso.firstname.phdr' | translate}}"></td>
     </tr>
 
     <tr>
-      <td>Nom</td>
+      <td>{{'form.perso.lastname.label' | translate}}</td>
       <td><input name="name"
                  formControlName="lastname"
                  class="form-control"
-                 placeholder="Dupont"></td>
+                 placeholder="{{'form.perso.lastname.phdr' | translate}}"></td>
     </tr>
 
     <tr>
-      <td>Né(e) le</td>
+      <td>{{'form.perso.dob.label' | translate}}</td>
       <td class="col-auto">
         <div class="input-group">
           <input [owlDateTime]="birthdayElt" [owlDateTimeTrigger]="birthdayElt"
-               formControlName="birthday" class="form-control"  placeholder="jj/mm/annee">
+               formControlName="birthday" class="form-control"  placeholder="{{'form.perso.dob.phdr' | translate}}">
           <owl-date-time [startAt]="startAt" [startView]="'multi-years'" [pickerType]="'calendar'" #birthdayElt></owl-date-time>
           <div class="input-group-append border-dark">
             <div class="input-group-text bg-dark border-dark trigger" style="cursor: pointer" [owlDateTimeTrigger]="birthdayElt">
@@ -35,29 +35,25 @@
     </tr>
 
     <tr>
-      <td>À</td>
+      <td>{{'form.perso.pob.label' | translate}}</td>
       <td><input name="birthplace"
                  formControlName="birthplace"
                  class="form-control"
-                 placeholder="Ville de naissance"></td>
+                 placeholder="{{'form.perso.pob.phdr' | translate}}"></td>
     </tr>
 
     <tr>
-      <td>Deumerant au</td>
+      <td>{{'form.perso.living.label' | translate}}</td>
       <td><textarea name="address" formControlName="address" class="form-control"
-                    placeholder="Votre adresse de confinement"></textarea></td>
+                    placeholder="{{'form.perso.living.phdr' | translate}}"></textarea></td>
     </tr>
     </tbody>
   </table>
 
-  <p class="text-justify">
-    certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par
-    l’article 1er du décret du 16 mars 2020 portant réglementation des déplacements dans
-    le cadre de la lutte contre la propagation du virus Covid-19 :
-  </p>
+  <p class="text-justify">{{'form.perso.certify' | translate}}</p>
 
   <select (change)="changeReason($event)" formControlName="reason" class="form-control">
-    <option disabled value="-1">Raison de sortie</option>
+    <option disabled value="-1">{{'form.perso.reason' | translate}}</option>
     <option *ngFor="let reason of reasons" [value]="reason.id">{{reason.title}}</option>
   </select>
 
@@ -66,17 +62,17 @@
   <table class="table table-borderless mt-2">
     <tbody>
     <tr>
-      <td>Fait à</td>
+      <td>{{'form.perso.doneAt.label' | translate}}</td>
       <td>
         <input name="city"
                formControlName="city"
                class="form-control"
-               placeholder="Ville">
+               placeholder="{{'form.perso.doneAt.phdr' | translate}}">
       </td>
     </tr>
 
     <tr>
-      <td>Le</td>
+      <td>{{'form.perso.when' | translate}}</td>
       <td class="col-auto">
         <div class="input-group">
             <input [min]="today" [owlDateTime]="todayElt" [owlDateTimeTrigger]="todayElt"
@@ -95,7 +91,7 @@
       <td></td>
       <td>
         <a [href]="downloadUrl" [download]="downloadName" class="btn btn-success float-right text-white" type="button">
-          <i class="fas fa-file-download"></i> Télécharger
+          <i class="fas fa-file-download"></i> {{'form.perso.download' | translate}}
         </a>
       </td>
     </tr>
