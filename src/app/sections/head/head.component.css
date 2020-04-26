@@ -1,5 +1,14 @@
+nav {
+  box-shadow: 0 0 5px lightgrey;
+}
+
+.navbar-brand {
+  color: black;
+  line-height: 2em;
+}
 .navbar-brand img {
   width: 45px;
+  margin-right: 20px;
 }
 
 #language {

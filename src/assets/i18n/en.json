@@ -1,4 +1,7 @@
 {
+  "nav": {
+    "title": "Covid 19 - Movement declaration"
+  },
   "certificate": {
     "title": "Generate your exit certificate",
     "personal": "Personal",
@@ -26,7 +29,7 @@
         "label": "Living at",
         "placeholder": "Your containment address"
       },
-      "certify": "certify that my trip is related to the following reason (check the box) authorized by article 1 of the decree of March 16, 2020 regulating travel as part of the fight against the spread of the Covid-19 virus:",
+      "certify": "certify that my travel is related to the following reason (check the box) authorized by article 3 of the decree of March 23rd, 2020 regulating travel as part of the fight against the spread of the Covid-19 virus:",
       "reason": "Reason to go out",
       "doneAt": {
         "label": "Done in",
@@ -42,10 +45,10 @@
         "phdr": "Manager Last and first name"
       },
       "function": {
-        "label": "Function",
+        "label": "Job title",
         "phdr": "eg: Agence Manager"
       },
-      "certify": "certifies that the movements of the following person, between his home and his place of professional activity, cannot be postponed or are essential for the exercise of activities which cannot be organized in the form of homework (as declare as 1<sup>er</sup> of the 2<sup>nd</sup> paragraph of article 1 of the decree of March 16, 2020 regulating travel within the framework of the fight against the spread of the Covid-19 virus):",
+      "certify": "hereby certify that the travels of the individual below between his home and his job are necessary to our activity and cannot be done via remote work (in the sense of the 1st and 2nd sections of the article of the decree of the 16th of mars 2020 regulating the travels in the fight against the spread of the Covid-19 virus):",
       "firstname": {
         "label": "First name",
         "phdr": "First name of the person going out"
@@ -67,11 +70,11 @@
         "phdr": "Confinement address"
       },
       "activity": {
-        "label": "Nature of the professional activity",
+        "label": "Nature of your activity",
         "phdr": "eg: Airline pilot"
       },
       "place": {
-        "label": "Professional activity location",
+        "label": "Location of your activity",
         "phdr": "Place of work address"
       },
       "validity": {
