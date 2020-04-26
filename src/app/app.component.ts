@@ -13,7 +13,7 @@ export class AppComponent {
 
   constructor(private router: Router, private translate: TranslateService) {
     translate.addLangs(['fr', 'en']);
-    translate.setDefaultLang('fr');
+    translate.setDefaultLang('en');
 
     // https://christianlydemann.com/dynamic-translations-in-angular/
     const browserLang = translate.getBrowserLang();

@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "title": "Covid 19 - Attestation de déplacement"
+  },
+  "certificate": {
+    "title": "Générer votre attestation de sortie",
+    "personal": "Personnelle",
+    "professional": "Professionnelle"
+  },
+  "form": {
+    "perso": {
+      "firstname": {
+        "label": "Prénom",
+        "phdr": "Jean"
+      },
+      "lastname": {
+        "label": "Nom",
+        "phdr": "Dupont"
+      },
+      "dob": {
+        "label": "Né(e) le",
+        "phdr": "jj/mm/annee"
+      },
+      "pob": {
+        "label": "À",
+        "phdr": "Ville de naissance"
+      },
+      "living": {
+        "label": "Deumerant au",
+        "phdr": "Votre adresse de confinement"
+      },
+      "certify": "certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par l’article 3 du décret du 23 mars 2020 prescrivant les mesures générales nécessaires pour faire face à l’épidémie de Covid19 dans le cadre de l’état d’urgence sanitaire:",
+      "reason": "Raison de sortie",
+      "doneAt": {
+        "label": "Fait à",
+        "phdr": "Ville"
+      },
+      "when": "Le",
+      "download": "Télécharger"
+    },
+    "pro": {
+      "hereby": "Je soussigné(e)",
+      "manager": {
+        "label": "Mme / M.",
+        "phdr": "Nom Prénom Responsable"
+      },
+      "function": {
+        "label": "Fonction",
+        "phdr": "exp: Directeur d'agence"
+      },
+      "certify": "certifie que les déplacements de la personne ci-après, entre son domicile et son lieu d’activité professionnelle, ne peuvent être différés ou sont indispensables à l’exercice d’activités ne pouvant être organisées sous forme de télétravail (au sens du 1<sup>er</sup> du 2<sup>e</sup> alinéa de l’article 1er du décret du 16 mars 2020 portant règlementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19):",
+      "firstname": {
+        "label": "Prénom",
+        "phdr": "Prénom du sortant"
+      },
+      "lastname": {
+        "label": "Nom",
+        "phdr": "Nom du sortant"
+      },
+      "dob": {
+        "label": "Date de naissance",
+        "phdr": "jj/mm/annee"
+      },
+      "pob": {
+        "label": "Lieu de naissance",
+        "phdr": "Ville de naissance"
+      },
+      "living": {
+        "label": "Adresse du domicile",
+        "phdr": "Adresse de confinement"
+      },
+      "activity": {
+        "label": "Nature de l’activité professionnelle",
+        "phdr": "exp: Chauffeur"
+      },
+      "place": {
+        "label": "Lieu d’exercice de l’activité professionnelle",
+        "phdr": "Adresse du lieu de travail"
+      },
+      "validity": {
+        "label": "Durée de validité",
+        "phdr": "exp: Du 1 avril au 30 Avril 2020"
+      },
+      "means": {
+        "label": "Moyen de déplacement",
+        "phdr": "exp: Voiture immatriculée XX-999-XX"
+      },
+      "doneAt": {
+        "label": "Fait à",
+        "phdr": "Ville"
+      },
+      "when": "Le",
+      "download": "Télécharger"
+    }
+  }
+}
