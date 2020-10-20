@@ -1,37 +1,42 @@
 [
   {
     "id": 0,
-    "title": "Déplacement professionel",
-    "description": "Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu’ils sont indispensables à l’exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés"
+    "title": "Déplacement professionnelle",
+    "description": "Déplacements entre le domicile et le lieu d'exercice de l'activité professionnelle ou le lieu d'enseignement et de formation"
   },
   {
     "id": 1,
-    "title": "Faire ses courses",
-    "description": "Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessitée dans des établissements dont les activités demeurent autorisées (liste sur gouvernement.fr)"
+    "title": "Consultations et soins",
+    "description": "Déplacements pour des consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ou pour l'achat de produits de santé"
   },
   {
     "id": 2,
-    "title": "Motif de santé",
-    "description": "Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée"
+    "title": "Raison familial impérieux",
+    "description": "Déplacements pour motif familial impérieux, pour l'assistance aux personnes vulnérables ou précaires ou pour la garde d'enfants"
   },
   {
     "id": 3,
-    "title": "Assistance aux personnes vulnérables",
-    "description": "Déplacements pour motif familial impérieux, pour l'assistance aux personnes vulnérables ou la garde d’enfants"
+    "title": "Déplacement et aides aux handicapé",
+    "description": "Déplacements des personnes en situation de handicap et de leur accompagnant"
   },
   {
     "id": 4,
-    "title": "Déplacement bref",
-    "description": "Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie"
+    "title": "Convocation judiciaire",
+    "description": "Déplacements pour répondre à une convocation judiciaire ou administrative"
   },
   {
     "id": 5,
-    "title": "Convocation judiciaire ou administrative",
-    "description": ""
+    "title": "Missions d'intérêt général",
+    "description": "Déplacements pour participer à des missions d'intérêt général sur demande de l'autorité administrative"
   },
   {
     "id": 6,
-    "title": "Missions d'intérêt général",
-    "description": "Participation à des missions d'intérêt général sur demande de l’autorité administrative"
+    "title": "Transits déplacements longues distances",
+    "description": "Déplacements liés à des transits pour des déplacements de longues distances"
+  },
+  {
+    "id": 7,
+    "title": "Sortie animaux de compagnie",
+    "description": "Déplacements brefs, dans un rayon maximal d'un kilomètre autour du domicile pour les besoins des animaux de compagnie"
   }
 ]

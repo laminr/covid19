@@ -67,8 +67,16 @@ export class FormPersoComponent implements OnInit {
 
   private onChanges() {
     this.persoForm.valueChanges.subscribe(value => {
-      this.pdfDataService.perso = new PersoModel(value.firstname, value.lastname, value.birthday, value.birthplace, value.address,
-        value.reason, value.city, value.today);
+      this.pdfDataService.perso = new PersoModel(
+        value.firstname,
+        value.lastname,
+        value.birthday,
+        value.birthplace,
+        value.address,
+        value.reason,
+        value.city,
+        value.today
+      );
     });
   }
 

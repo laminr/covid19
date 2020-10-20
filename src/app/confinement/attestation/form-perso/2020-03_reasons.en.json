@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "title": "Business trip",
+    "description": "Travel between my home and my work, when remote work isn’t an option or work travels can’t be canceled"
+  },
+  {
+    "id": 1,
+    "title": "Doing grocery",
+    "description": "Travel to purchase essential goods within the nearest authorized facilities (list available at gouvernement.fr)."
+  },
+  {
+    "id": 2,
+    "title": "Health reason",
+    "description": "Travels for medical consultations that can’t be done remotely"
+  },
+  {
+    "id": 3,
+    "title": "Assistance to vulnerable people",
+    "description": "Travels for family reasons, to assist vulnerable individuals, or for child care"
+  },
+  {
+    "id": 4,
+    "title": "Brief trip",
+    "description": "Short travels, close to home, for individual physical activity (excluding group sports or proximity with other individuals), or for walking pets."
+  },
+  {
+    "id": 5,
+    "title": "Judicial or administrative summons",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "title": "General interest missions",
+    "description": "participation to general interest missions commissioned by an administrative authority"
+  }
+]
